@@ -1,6 +1,7 @@
-<%= @chatroom.name %>
+
 
 <div class="container">
+<h2 class="p-2"> You are chatting in: <%= @chatroom.name %></h2>
     <div id="messages" data-current-user="<%= current_user.id %>" data-chatroom-id="<%= @chatroom.id %>">
     <% @chatroom.messages.each do |message| %>
         <%= render "./messages/message", message: message %>
