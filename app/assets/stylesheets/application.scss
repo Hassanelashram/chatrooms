@@ -11,3 +11,32 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+.chatroom-card {
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+#messages {
+    overflow: scroll;
+    height: 70vh;
+    padding: 10px;
+}
+
+.message-container {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: white;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.from-self {
+    margin-left: auto; 
+    margin-right: 0;
+    background-color: rgb(7, 137, 206);
+    color: white;
+}

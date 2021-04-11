@@ -1,0 +1,8 @@
+
+<div class="message-container <%= 'text-right from-self' if current_user == message.user %>" data-sender-id="<%= message.user.id%>" id="message-<%= message.id %>">
+  <i class="author">
+    <span>from <%= message.user.username %></span>
+  </i>
+  <p class="d-block"><%= message.content %></p>
+  <small><%= message.created_at.strftime("%b %e at %l:%M%p") %></small>
+</div>

@@ -1,0 +1,13 @@
+
+
+
+<div class="container">
+    <% @chatrooms.each do |room| %>
+        <div class="chatroom-card"> 
+            <h2><%= room.name %></h2>
+            <p>Messages exchanged: <%= room.messages.count %></p>
+            <p>Online:</p>
+            <%= link_to "Join the conversation", chatroom_path(room), class: "btn btn-success" %>
+        </div>
+    <% end %>
+</div>
